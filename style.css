@@ -1,0 +1,123 @@
+/*    RESET
+- - - - - - - - - - - */
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent 
+}
+
+/*    BODY, GLOBAL
+- - - - - - - - - - - */
+body {
+	background: url(img/bg.png) 0 0 repeat-x #F2F2F2;
+	font: 12px helvetica, arial;
+}
+
+a {
+	text-decoration: underline;
+}
+
+p, strong, a {
+	color: #ccc;
+}
+
+h1, p, a, strong {
+	text-shadow: 2px 2px 2px #fff;
+	-webkit-text-shadow: 2px 2px 2px #fff;
+	-moz-text-shadow: 2px 2px 2px #fff;
+	-o-text-shadow: 2px 2px 2px #fff;
+}
+
+#wrap, #header, #slideshow, #nav, #author {
+	width: 980px;
+	margin: 10px auto 5px;
+}
+
+/*    WRAP
+- - - - - - - - - - - */
+#wrap {
+	margin: 10px auto 100px;
+}
+
+/*    HEADER
+- - - - - - - - - - - */
+#header {
+	text-align: center;
+	font-size: 32px;
+	color: #444;
+}
+
+/*    SLIDESHOW
+- - - - - - - - - - - */
+#slideshow {
+	background: #fff url(img/img-02.png) no-repeat center center;
+	position: relative;
+	height: 535px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	box-shadow: 2px 2px 2px #ccc;
+	-webkit-box-shadow: 2px 2px 2px #ccc;
+	-moz-box-shadow: 2px 2px 2px #ccc;
+	-o-box-shadow: 2px 2px 2px #ccc;
+	border-radius: 6px;
+}
+
+#slide li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 980px;
+	height: 535px;
+	z-index: 0;
+	border-radius: 6px;
+}
+
+#slide li img {
+	opacity: 0;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+
+#slide li:target {
+	z-index: 5;
+	background: #fff;
+}
+
+#slide li:target img {
+	opacity: 1;
+}
+
+/*    NAV
+- - - - - - - - - - - */
+#nav li {
+	background: #fff;
+	float: left;
+	width: 75px;
+	height: 41px;
+	margin: 0 10px 0 0;
+	padding: 5px;
+	box-shadow: inset 2px 2px 2px #ccc;
+	-webkit-box-shadow: inset 2px 2px 2px #ccc;
+	-moz-box-shadow: inset 2px 2px 2px #ccc;
+	-o-box-shadow: inset 2px 2px 2px #ccc;
+	border-radius: 2px;
+}
+
+#nav li:hover {
+	-box-shadow: inset 2px 2px 2px #ddd;
+	-webkit-box-shadow: inset 2px 2px 2px #ddd;
+	-moz-box-shadow: inset 2px 2px 2px #ddd;
+	-o-box-shadow: inset 2px 2px 2px #ddd;
+}
+
+/*    AUTHOR
+- - - - - - - - - - - */
+#author {
+	text-align: right;
+}
